@@ -207,6 +207,34 @@ iframe {
     margin-bottom: 10px;
 }
 
+.main {
+
+    overflow: scroll;
+    
+    background-image: url(./src/note2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 75%;
+    min-height: 80%;
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+
+
+.main-content {
+    
+    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-width: 550px;
+    height: 300px;
+
+}
+
 .qa {
 
     
