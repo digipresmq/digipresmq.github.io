@@ -171,13 +171,24 @@ div#nav-cont {
 
 #frame1_blog.flex-child {
 
-    max-width: 150px;
+    width: 230px;
+    height: 700px;
+    background-image: url(./src/nav_bg.png);
+    margin-left: 75px;
+    margin-top: 20px;
     
-    margin-left: 150px;
-    
-    width: 100%;
+   
     
     
+}
+
+.posts {
+
+    margin-top: 5px;
+    padding-right: 10px;
+    height: 660px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 #frame2.flex-child {
@@ -196,6 +207,8 @@ div#nav-cont {
     display: block;
 
 }
+
+
 
 
 iframe {
@@ -323,6 +336,7 @@ iframe {
     display: block;
     transition: ease-in 0.3s;
     border-radius: 7px;
+    max-width: 125px;
     
 
 }
