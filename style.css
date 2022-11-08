@@ -37,6 +37,21 @@ body {
     
 }
 
+
+.subtitle {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    padding: 10px;
+    max-width: 550px;
+    margin: auto;
+    margin-left: 80px;
+    
+    
+    color: rgb(153, 153, 153);
+    
+}
+
 .blog-text {
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -77,8 +92,10 @@ body {
 .blog-text {
 
     margin-left: 80px;
-    margin-right: 30px;
+    margin-right: 40px;
     margin-top: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .blog-post {
@@ -95,7 +112,7 @@ body {
     flex-direction: column;
     width: 700px;
     max-width: 700px;
-    min-width: 700px;
+    min-width: 700px !important;
     min-height: 500px;
     max-height: 525px;
     padding-top: 30px;
@@ -171,9 +188,9 @@ div#nav-cont {
 
 #frame1_blog.flex-child {
 
-    width: 230px;
-    height: 700px;
-    background-image: url(./src/nav_bg.png);
+    width: 470px;
+    height: 750px;
+    
     margin-left: 75px;
     margin-top: 20px;
     
@@ -230,6 +247,8 @@ iframe {
 
 }
 
+
+
 .main {
 
     overflow: hidden;
@@ -240,6 +259,8 @@ iframe {
     min-width: 85%;
     min-height: 80%;
     width: 900px;
+    max-width: 900px;
+    min-width: 900px;
     margin-left: 70px;
     margin-top: 30px;
     height: 630px;
@@ -253,13 +274,27 @@ iframe {
     
     min-width: 550px;
     width: 795px;
-    min-height: 600px;
-    height: 550px;
+    
+    height: 520px;
     margin-top: 60px;
     margin-left: 60px;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x:hidden;
+    margin-bottom: 30px;
 
     
+}
+
+
+.proj-cont {
+
+
+    margin: 20px;
+    height: 520px;
+    margin-right: 25px;
+    text-align: justify;
+    
+
 }
 
 .main-flex {
@@ -267,7 +302,7 @@ iframe {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 424px;
+    height: 470px;
     margin-right:10px;
 }
 
@@ -292,9 +327,30 @@ iframe {
 
 }
 
+.text-column-over {
+
+    min-width: 100px;
+    width: 375px;
+    max-height:524px;
+    text-align: justify;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    
+    
+
+}
 .column-head {
 
     font-size: 30px;
+    width: 250px;
+    text-align: center;
+    
+}
+
+.column-head-over {
+
+    font-size: 30px;
+    width: 375px;
     text-align: center;
     
 }
@@ -310,6 +366,8 @@ iframe {
     min-width: 75%;
     min-height: 80%;
     width: 900px;
+    max-width: 900px;
+    min-width: 900px;
     margin: auto;
     margin-top: 30px;
     margin-left: 25px;
@@ -345,6 +403,28 @@ iframe {
 
     
     background-color: greenyellow;
+
+}
+
+
+.blog-listing {
+
+    background-color: rgb(81, 206, 56);
+    text-align: center;
+    padding: 5px;
+    display: block;
+    transition: ease-in 0.3s;
+    color: white;
+    max-width: 400px;
+    
+
+}
+
+.blog-listing:hover {
+
+    
+    background-color: greenyellow;
+    color: black;
 
 }
 

@@ -3,12 +3,159 @@
     <link rel="stylesheet" a href="./style.css">
     <body>
         
-        <div class="main">
+    <div class="main">
 
-            <div class="main-content">
+        <div class="main-content" style="width: 820px;">
         
+            <div class="proj_cont">
+                
+                <p style="text-align: justify;" style="margin-right: 15px;">
 
-                test
+
+
+                    <p style="text-align: center;">
+                        <i>Rough Timeline/Gantt Chart</i>
+                        <br>
+                        <br>
+                        <img src="./src/gantt.png" alt="Timeline for the project.">
+
+                    </p>
+                    <br>
+                    <p style="text-align: center;">
+                    
+                    <i>Potential tools used:</i>
+
+                        <ul>
+                            <li>Python (scraping)</li>
+                            <li>C# (frontend development/databasing)</li>
+                            <li>LiteDB (databasing)</li>
+                            <li>Endnote, for referencing</li>
+
+                        </ul>
+                    <br>
+                    </p>
+
+
+                    <p style="text-align: center; !important"><i>Data Management Plan</i></p>
+                        
+                        
+                        <p><u>The Dataset</u></p>
+                        <p style="margin-right: 30px; text-align: justify;">To circumnavigate some complications at this stage, 
+                            the data will constitute a ‘dummy’ dataset. 
+                        The way I will do this is to set up my own instances on forum software (as there are several legacy 
+                        and modern platforms still in use), populate them with dummy data, and demonstrate the scraping 
+                        program and database schema using that data. As the data itself is incidental, and establishing 
+                        my own forum instances give me unique insight into the way the data is constructed and stored, 
+                        this seems like a sensible choice.</p>
+
+                        <p><u>Data Standards</u></p>
+                        
+                        <p style="margin-right: 30px; text-align: justify;">Data collection will likely be scraped into the database itself, 
+                        but outside of this the forms used by the data are likely to be raw .html or HTML content converted to raw text (.txt) 
+                        files. Preservation of some .css files for website appearance structure recreation may also be an option.
+                        As for the database schema I would prefer a lightweight, non-server-requiring format like 
+                        <a href="https://www.litedb.org/" style="color: cadetblue;" target="new">LiteDB</a>. Its syntax 
+                        is compatible with existing SQL-style database modes for interoperability purposes, and its FOSS specification 
+                        suits the project.</p>
+
+                        <p><u>Metadata</u></p>
+                        Metadata scraped from forum software will likely include most of the following:
+
+                        <ul style="margin-left: 30px;">
+                        <li>Poster username and ID</li>
+                        <li>Date posted</li>
+                        <li>Post content</li>
+                        <li>Relevant URLs</li>
+                        <li>Subforum/thread/post location (URL structure)</li>
+                        <li>Location (if recorded on profile)</li>
+                        </ul>
+
+                        Additional data at this stage:
+
+                        <br>
+                        <p style="margin-left: 30px;">Automated:</p>
+
+                        <ul style="margin-left: 30px;">
+                        <li>Date accessed</li>
+                        <li>Type of forum software</li>
+                        </ul>
+
+                        <p style="margin-left: 30px;">Manual:</p>
+
+                        <ul style="margin-left: 30px;">
+                        <li>Type of material</li>
+                        <li>Topic keywords/tags</li>
+                        </ul>
+
+                        As the project develops the specific types of metadata and what they are used for will be recorded.
+
+                        <p><u>Access to Data/Data Security</u></p>
+                        <p>According to the <a href="https://policies.mq.edu.au/document/view.php?id=300" style="color: cadetblue;" target="new">
+                            RDMP</a>(18(a)), the data:</p>
+
+                        <p style="margin-left: 30px; margin-right: 30px; text-align: justify;"><i>must be deposited in a 
+                        discipline-specific, general-purpose, or Macquarie University research 
+                        data repository, or in national or international collections, as per good practice in the discipline 
+                        and in accordance with any publisher or funder requirements. Dataset-level metadata should be deposited 
+                        in the Macquarie University Research Data Repository if data is published elsewhere (including a link 
+                        to the data);</i></p>
+                        
+                        <p style="margin-right: 30px; text-align: justify;">The likely candidate for offsite data repository (as outlined by the University’s list of approved 
+                        data platforms) will be the <a href="https://ada.edu.au" style="color: cadetblue;" target="new"><u>Australian Data Archive.</u></a> </p>
+                        
+                        <p style="margin-right: 30px; text-align: justify;">In accordance with the <a href="https://policies.mq.edu.au/document/view.php?id=302" style="color: cadetblue;" target="new">RDSSS</a>, the dummy data would be classed as ‘general’ (normal, non-high-risk
+                         or sensitive data) in terms of the University’s classifications, and a potential real dataset will likely 
+                         fall under the ‘publicly available data’ provision, also under the ‘general’ classification. The CC4.0 
+                         license is more than adequate for the data.</p>
+                        
+                        <p style="margin-right: 30px; text-align: justify;">In terms of data security, the project will implement the following procedures:</p>
+                        
+                        <ul style="margin-left: 30px;">
+                        <li>Strong password on devices (crosschecked with resources to ensure no compromised passwords)</li>
+                        <li>Encryption on devices holding and harbouring the data</li>
+                        <li>Automated backups to both cloud service (more often) and encrypted physical storage medium (less often)</li>
+                        
+                        </ul>
+                        
+
+
+
+                        <p><u>Ownership and Licensing</u></p>
+                        <p style="margin-right: 30px; text-align: justify;">As a dummy/demonstrative dataset, generally there is nothing to distribute that others could use in any practical way – 
+                        though the dataset may be packaged with any future software made by the project to serve for further demonstrative
+                         purposes. Because the data is made by the project, and thus Macquarie as the IP holder of the project 
+                         (in accordance with the <a href="https://policies.mq.edu.au/document/view.php?id=207" 
+                         style="color: cadetblue;" target="new">IPP</a>), would continue to have ownership of that, but there’s no inherent 
+                         value in the 
+                         data itself outside of its demonstrative use. </p>
+
+                        <p style="margin-right: 30px; text-align: justify;">In terms of commercialization of the programmatic aspect of the project, I would like to be able to adhere
+                         to the principle that nothing in the project is to be used for commercial purposes, but this is subject to
+                          a waiver by the University on the basis of it being a low-value output. The overall code license for the 
+                          project would likely have to come after the conclusion/marking of the thesis, depending on the University’s 
+                          policies and procedures.</p>
+
+                        <p style="margin-right: 30px; text-align: justify;">If in the future of the project post-thesis submission I decide to use a real scraped dataset from 
+                        real user posts, I would generally have no ownership over that data – it’s a publicly derived resource, 
+                        I have only arranged it in a particular way. If anything it belongs to the server owner or the poster 
+                        (though this is not exactly defined legally), but in the case of abandoned forums it’s impossible to ask
+                         for permission. Depending on the location in which the data is pulled from, in this instance, it may be 
+                         liable to takedown requests from posters from nations where the GDPR is active. (These problems should 
+                         indicate why I have chosen a dummy dataset, but in any case data would be screen for any potentially
+                          identifying information)</p>
+
+                        <p><u>Project Archival/Preservation</u></p>
+                        <p style="margin-right: 30px; text-align: justify;">In terms of the data, see the Access to Data section. Development documentation and other miscellaneous 
+                        development files will likely be stored in the same place, or another repository as outlined by the University 
+                        and the project’s specific faculty department. </p>
+
+                        <p style="margin-right: 30px; text-align: justify;">If available, I will make specific archival materials for future preservation as the policies and procedures allow.</p>
+
+
+
+
+
+                </p>
 
 
 
@@ -31,8 +178,8 @@
 
 
         
+                </div>
             </div>
-
         </div>
     </body>
 </html>
